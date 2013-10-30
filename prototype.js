@@ -32,10 +32,10 @@ var person = {
 };
 
 // and an object called 'zack'
-var zack = {
-    a: 1,
-    b: 2 
-};
+    var zack = {
+        a: 1,
+        b: 2 
+    };
 
 // -----------------------------------------------
 // Make zack an alien
