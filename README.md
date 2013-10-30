@@ -11,13 +11,15 @@ Lab for javascript prototypical inheritance and object creation patterns.
   * [Browser compatability with ES5] (http://kangax.github.io/es5-compat-table/)
 
 ### Files.
+  * prototype.js - Using the prototype, __proto__, for inheritance.
+   *Don't use these examples in production. __proto__ not available in some environments, IE, etc.*
   * const_function.js - Creating objects with a Constructor function. 
   * const_function_inherit.js - Inheritance with Constructor
     function. Injects a temp function instance btw the object created
     and the function prototype this new object.
   * const_function_proto_inherit.js - Inheritance with Constructor
     function. Uses the prototype, __proto__, to link super and sub
-    classes. *Can't use this in some environment due to the lack of
+    classes. *Can't use this in some environments due to the lack of
     the __proto__.*
   * const_function_inherit2.js - Inheritance with Constructor
     function. Inherit's one Constructor function from another. *Needs debugging*

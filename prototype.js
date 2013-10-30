@@ -253,28 +253,3 @@ console.log(fred.goodbye());
 // Why is the say method bad?
 
 
-// ==========================================================================
-// Prototype chains, (aka prototypical inheritence), for Object.create
-// This is available in ES5
-// ==========================================================================
-
-// lets reset the person prototype
-person.__proto__ = null;
-
-var sue = Object.create(person, {name: {value: "Susan"}});
-console.log(sue.kind); //=> undefined, only defined in person and alien!
-console.log(sue.name); //=> 'Susan'
-console.log(sue.a);  //=> undefined
-console.log(sue.b);  //=> undefined
-console.log(sue.c);  //=> 3
-console.log(sue.d);  //=> 4
-console.log(sue.e);  //=> undefined
-console.log(sue.f);  //=> undefined
-
-// Look at sue in chrome inspector
-// see how sue is an instance of Object
-// it's __proto__ points to person.
-console.log(sue.constructor); // undefined
-console.log(sue.prototype);   // undefined
-console.log(sue.__proto__);   // undefined
-
